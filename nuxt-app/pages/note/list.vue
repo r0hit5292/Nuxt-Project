@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h1>Show List Here</h1>
+      <h1 class=" font-bold">List</h1>
       <div class="flex w-4/5 border-2 justify-center m-auto flex-wrap">
         <!-- sending id on click of list to make it dynamic -->
         <nuxt-link
@@ -16,7 +16,7 @@
             <div class="text-rose-600">
               Heading - <span class="text-blue-600"> {{ item.NoteHeading }}</span>
          
-            <div class="text-black">{{ item.NoteContent }}</div>
+            <div class="text-black truncate">{{ item.NoteContent }}</div>
           </div>
         </nuxt-link>
       </div>
